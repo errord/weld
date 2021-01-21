@@ -1,10 +1,10 @@
 import pandas as pd
 
-import grizzly_impl
-from lazy_op import LazyOpResult, to_weld_type
+import grizzly.grizzly_impl
+from grizzly.lazy_op import LazyOpResult, to_weld_type
 from weld.weldobject import *
 
-import utils
+import grizzly.utils
 
 class SeriesWeld(LazyOpResult):
     """Summary

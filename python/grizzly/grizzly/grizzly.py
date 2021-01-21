@@ -1,7 +1,7 @@
-from utils import *
-from seriesweld import SeriesWeld
-from dataframeweld import DataFrameWeld
-from groupbyweld import GroupByWeld
+from grizzly.utils import *
+from grizzly.seriesweld import SeriesWeld
+from grizzly.dataframeweld import DataFrameWeld
+from grizzly.groupbyweld import GroupByWeld
 
 
 

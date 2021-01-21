@@ -1,6 +1,6 @@
 import numpy as np
 from numpy.random import *
-from weldarray import weldarray
+from weldnumpy.weldarray import weldarray
 
 def rand(*args):
     return weldarray(np.random.rand(*args))

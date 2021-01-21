@@ -1,11 +1,11 @@
 OS=$(shell uname -s)
-LLVM_VERSION=$(shell llvm-config --version | cut -d . -f 1,2)
+LLVM_VERSION=$(shell llvm-config --version | cut -d . -f 1)
 
-PYTHON_HEADER_INCLUDE = $(shell python-config --includes)
-NUMPY_HEADER_INCLUDE = -I$(shell python -c "import numpy; print numpy.get_include()" 2>/dev/null)
+PYTHON_HEADER_INCLUDE = $(shell /data/.pyenv/shims/python-config --includes)
+NUMPY_HEADER_INCLUDE = -I$(shell /data/.pyenv/versions/weld/bin/python -c "import numpy; print(numpy.get_include())" 2>/dev/null)
 
 ifndef EXEC
-  EXEC=python
+  EXEC=/data/.pyenv/versions/weld/bin/python
 endif
 
 PYTHON_LDFLAGS=-L$(shell $(EXEC) -c "from distutils import sysconfig; print sysconfig.get_config_var('LIBDIR')" 2>/dev/null) $(shell python-config --libs)

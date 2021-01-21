@@ -1,7 +1,7 @@
 import numpy as np
 
-import numpy_weld_impl
-from lazy_op import LazyOpResult
+import grizzly.numpy_weld_impl
+from grizzly.lazy_op import LazyOpResult
 from weld.weldobject import *
 
 

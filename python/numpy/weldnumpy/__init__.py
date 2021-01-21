@@ -1,4 +1,4 @@
-from weldarray import *
+from weldnumpy.weldarray import *
 from weldnumpy import *
 
 # importing everything from numpy so we can selectively over-ride the array creation routines, and
@@ -7,7 +7,7 @@ from numpy import *
 
 # since random in a module within numpy, we define a module that imports everything from random and
 # returns weldarrays instead of ndarrays.
-import weldrandom as random
+import weldnumpy.weldrandom as random
 import numpy as np
 
 def array(arr, *args, **kwargs):
