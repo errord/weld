@@ -1,6 +1,6 @@
 import numpy as np
 
-import grizzly.numpy_weld_impl
+import grizzly.numpy_weld_impl as numpy_weld_impl
 from grizzly.lazy_op import LazyOpResult
 from weld.weldobject import *
 
